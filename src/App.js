@@ -44,7 +44,7 @@
 // App.js
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 import Home from "./pages/Home";
 import Starred from "./pages/Starred";
 import ShowGrid from "./components/show/ShowGrid";
