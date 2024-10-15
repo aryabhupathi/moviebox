@@ -19,19 +19,19 @@ const Header = () => {
         display: "flex",
         justifyContent: "space-between",
         padding: "1rem",
-        background: "#f8f9fa",
+        background: "#76e3da",
         borderBottom: "1px solid #eaeaea",
       }}
     >
       <div
-        onClick={() => navigate("/")} style={{color:'blue'}}
-      >MBUFFER
+        onClick={() => navigate("/")} style={{color:'red'}}
+      >MOVIE FINDER
       </div>
       <div>
         {user ? (
-          <button onClick={handleLogout} style={{color:'blue'}}>Logout</button> // Show logout if user is logged in
+          <button onClick={handleLogout} style={{color:'red'}}>Logout</button> // Show logout if user is logged in
         ) : (
-          <button onClick={() => navigate("/login")} style={{color:'blue'}}>Login</button> // Show login if user is not logged in
+          <button onClick={() => navigate("/login")} style={{color:'red'}}>Login</button> // Show login if user is not logged in
         )}
       </div>
     </div>
