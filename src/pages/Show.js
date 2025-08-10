@@ -83,15 +83,19 @@ const Show = () => {
         />
       </InfoBlock>
 
-      <div>
+<InfoBlock>
+      {/* <div> */}
         <h2>Seasons</h2>
         <Seasons seasons={show._embedded.seasons} />
-      </div>
+      {/* </div> */}
+      </InfoBlock>
 
-      <div>
+<InfoBlock>
+      {/* <div> */}
         <h2>Cast</h2>
         <Cast cast={show._embedded.cast} />
-      </div>
+      {/* </div> */}
+      </InfoBlock>
     </ShowPageWrapper>
   );
 };

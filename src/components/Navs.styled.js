@@ -15,7 +15,8 @@ export const LinkStyled = styled(Link)`
   position: relative;
   ${'' /* border:3px solid red; */}
   text-decoration: none;
-  color: white;
+  ${'' /* color: white; */}
+  color: #25df4c;
   &.active {
     color: blue;
     &:after {

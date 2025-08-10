@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { SearchCard } from "../../components/styled";
 
 export const StyledActorCard = styled(SearchCard)`
-${'' /* background-image: url('./images.jpg'); */}
   .deathday {
     margin: 0;
     margin-top: 15px;

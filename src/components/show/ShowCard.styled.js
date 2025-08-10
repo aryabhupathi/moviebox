@@ -8,12 +8,15 @@ export const StyledShowCard = styled(SearchCard)`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     a {
+      ${'' /* text-decoration-color: #fff; */}
       text-decoration-color: #fff;
-      color: #fff;
+      ${'' /* color: #fff; */}
+      color:red;
       &:hover {
         text-decoration-color: red;
-        color: blue;
+        color: black;
       }
     }
     button {

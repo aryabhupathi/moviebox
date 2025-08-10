@@ -88,9 +88,9 @@ const ShowCard = ({ id, image, name, summary, onStarClick, isStarred }) => {
         <img src={image} alt="show" />
       </div>
 
-      <h1>{name}</h1>
+      <h1 style={{color:'red'}}>{name}</h1>
 
-      <p>{summaryAsText}</p>
+      <p style={{color:'black'}}>{summaryAsText}</p>
 
       <div className="btns">
         <Link to={`/show/${id}`}>Read more</Link>

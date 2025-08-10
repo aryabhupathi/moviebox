@@ -79,7 +79,8 @@ const RadioWrapper = styled.label`
   user-select: none;
   font-weight: 700;
   line-height: 1.65;
-  color: white; /* Set label text color to white */
+  color: #25df4c;
+  margin-right:10px;
 
   input {
     position: absolute;
