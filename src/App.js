@@ -1,4 +1,3 @@
-import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 import Home from "./pages/Home";
@@ -16,9 +15,7 @@ const GlobalStyle = createGlobalStyle`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /*minHeight:100vh*/
-    
-  background: linear-gradient(to right, #caa4f0, #9dcded); 
+    background: linear-gradient(to right, #caa4f0, #9dcded); 
   }
 `;
 const ProtectedRoute = ({ children }) => {

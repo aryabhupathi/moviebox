@@ -1,6 +1,4 @@
-import React from "react";
 import { SeasonList, SeasonsWrapper } from "./Seasons.styled";
-
 const Seasons = ({ seasons }) => {
   return (
     <SeasonsWrapper>
@@ -34,5 +32,4 @@ const Seasons = ({ seasons }) => {
     </SeasonsWrapper>
   );
 };
-
 export default Seasons;

@@ -1,75 +1,4 @@
-// import React from "react";
-// import styled from "styled-components";
-
-// const RadioWrapper = styled.label`
-//   display: block;
-//   position: relative;
-//   padding-left: 25px;
-//   cursor: pointer;
-//   font-size: 13px;
-//   user-select: none;
-//   font-weight: 700;
-//   line-height: 1.65;
-
-//   input {
-//     position: absolute;
-//     opacity: 0;
-//     cursor: pointer;
-//   }
-
-//   span {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     height: 16px;
-//     width: 16px;
-//     background-color: #fff;
-//     border: 2px solid blue;
-//     color:white;
-//     border-radius: 50%;
-//   }
-
-//   input:checked ~ span {
-//     background-color: #fff;
-//     border: 2px solid blue};
-//   }
-
-//   span:after {
-//     content: '';
-//     position: absolute;
-//     display: none;
-//   }
-
-//   input:checked ~ span:after {
-//     display: block;
-//   }
-
-//   span:after {
-//     top: 4px;
-//     left: 4px;
-//     width: 8px;
-//     height: 8px;
-//     border-radius: 50%;
-//     background: blue};
-//   }
-// `;
-
-// const CustomRadio = ({ label, ...restProps }) => {
-//   return (
-//     <RadioWrapper htmlFor={restProps.id}>
-//       {label}
-//       <input {...restProps} type="radio" />
-//       <span />
-//     </RadioWrapper>
-//   );
-// };
-
-// export default CustomRadio;
-
-
-import React from "react";
 import styled from "styled-components";
-
 const RadioWrapper = styled.label`
   display: block;
   position: relative;
@@ -80,14 +9,12 @@ const RadioWrapper = styled.label`
   font-weight: 700;
   line-height: 1.65;
   color: #25df4c;
-  margin-right:10px;
-
+  margin-right: 10px;
   input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
   }
-
   span {
     position: absolute;
     top: 0;
@@ -98,22 +25,18 @@ const RadioWrapper = styled.label`
     border: 2px solid blue;
     border-radius: 50%;
   }
-
   input:checked ~ span {
     background-color: #fff;
     border: 2px solid blue;
   }
-
   span:after {
-    content: '';
+    content: "";
     position: absolute;
     display: none;
   }
-
   input:checked ~ span:after {
     display: block;
   }
-
   span:after {
     top: 4px;
     left: 4px;
@@ -123,7 +46,6 @@ const RadioWrapper = styled.label`
     background: blue;
   }
 `;
-
 const CustomRadio = ({ label, ...restProps }) => {
   return (
     <RadioWrapper htmlFor={restProps.id}>
@@ -133,5 +55,4 @@ const CustomRadio = ({ label, ...restProps }) => {
     </RadioWrapper>
   );
 };
-
 export default CustomRadio;

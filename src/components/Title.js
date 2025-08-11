@@ -1,4 +1,3 @@
-import React from "react";
 import { TitleWrapper } from "./Title.styled";
 const Title = ({ title, subtitle }) => {
   return (
@@ -8,5 +7,4 @@ const Title = ({ title, subtitle }) => {
     </TitleWrapper>
   );
 };
-
 export default Title;

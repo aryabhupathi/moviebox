@@ -1,24 +1,18 @@
-// Navs.js
-import React from "react";
 import { useLocation } from "react-router-dom";
-import { useAuth } from '../all/AuthContext' // Import the Auth context
+import { useAuth } from "../all/AuthContext";
 import { NavList, LinkStyled } from "./Navs.styled";
-
 const LINKS = [
   { to: "/", text: "Home" },
   { to: "/starred", text: "Starred" },
 ];
-
 const Navs = () => {
   const location = useLocation();
-  const { user } = useAuth(); // Get user from auth context
-
+  const { user } = useAuth();
   return (
     <NavList>
       {LINKS.map((item) => {
-        // Render "Starred" link only if the user is logged in
         if (item.text === "Starred" && !user) {
-          return null; // Don't render if user is not authenticated
+          return null;
         }
         return (
           <li key={item.to}>
@@ -34,5 +28,4 @@ const Navs = () => {
     </NavList>
   );
 };
-
 export default Navs;

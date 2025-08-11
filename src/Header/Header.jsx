@@ -1,18 +1,12 @@
-// Header.js
-import React from "react";
-
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../all/AuthContext"; // Import the Auth context
-
+import { useAuth } from "../all/AuthContext";
 const Header = () => {
   const navigate = useNavigate();
-  const { user, logout } = useAuth(); // Get user and logout function from context
-
+  const { user, logout } = useAuth();
   const handleLogout = () => {
-    logout(); // Call logout function
-    navigate("/"); // Redirect to home after logout
+    logout();
+    navigate("/");
   };
-
   return (
     <div
       style={{
@@ -23,19 +17,21 @@ const Header = () => {
         borderBottom: "1px solid #eaeaea",
       }}
     >
-      <div
-        onClick={() => navigate("/")} style={{color:'red'}}
-      >MOVIE FINDER
+      <div onClick={() => navigate("/")} style={{ color: "red" }}>
+        MOVIE FINDER
       </div>
       <div>
         {user ? (
-          <button onClick={handleLogout} style={{color:'red'}}>Logout</button> // Show logout if user is logged in
+          <button onClick={handleLogout} style={{ color: "red" }}>
+            Logout
+          </button>
         ) : (
-          <button onClick={() => navigate("/login")} style={{color:'red'}}>Login</button> // Show login if user is not logged in
+          <button onClick={() => navigate("/login")} style={{ color: "red" }}>
+            Login
+          </button>
         )}
       </div>
     </div>
   );
 };
-
 export default Header;

@@ -1,17 +1,13 @@
-import React from "react";
-import { useLocation } from "react-router-dom"; // Import useLocation
+import { useLocation } from "react-router-dom";
 import ActorCard from "./ActorCard";
 import IMAGE_NOT_FOUND from "../../images/ito.png";
 import { FlexGrid } from "../styled";
-
 const ActorGrid = ({ data }) => {
-  const location = useLocation(); // Use useLocation to get passed state
-  const actorData = data || location.state?.data || []; // Fallback to an empty array if data is undefined
-
+  const location = useLocation();
+  const actorData = data || location.state?.data || [];
   if (actorData.length === 0) {
-    return <div>No actors available</div>; // Handle empty data case
+    return <div>No actors available</div>;
   }
-
   return (
     <FlexGrid>
       {actorData.map(({ person }) => (
@@ -28,5 +24,4 @@ const ActorGrid = ({ data }) => {
     </FlexGrid>
   );
 };
-
 export default ActorGrid;

@@ -1,19 +1,14 @@
 import styled from "styled-components";
-
 import { SearchCard } from "../styled";
-
 export const StyledShowCard = styled(SearchCard)`
   .btns {
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     a {
-      ${'' /* text-decoration-color: #fff; */}
       text-decoration-color: #fff;
-      ${'' /* color: #fff; */}
-      color:red;
+      color: red;
       &:hover {
         text-decoration-color: red;
         color: black;
@@ -32,13 +27,13 @@ export const StyledShowCard = styled(SearchCard)`
         cursor: pointer;
       }
     }
-  }  h1, p {
-    ${'' /* font-size: 1.5rem; */}
+  }
+  h1,
+  p {
     color: white;
     transition: color 0.3s ease;
-
     &:hover {
-      color: red; /* Changes color to red on hover */
+      color: red;
     }
   }
 `;
